@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's Recept</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/simon.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Simon's Deliktatess Kök</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Hem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filtrera mat efter världsdel
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Asien</a></li>
+                  <li><a class="dropdown-item" href="#">Europa</a></li>
+                  <li><a class="dropdown-item" href="#">Afrika</a></li>
+                  <li><a class="dropdown-item" href="#">Sydamerika</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Mer inspiration?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Sök</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Receptsida skapad av Simon Arnar -->
+    <!-- Receptsida för persona Kocken Kalle -->
+
+    <!-- Sidan är utvecklad för att fungera bra på mobil men fungerar även bra på andra enheter. -->
+
+    <!-- Recept! -->
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/lasagne-de-luxe.jpg.webp" class="img-fluid rounded mb-3" alt="Lasagne de luxe">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h1 style="padding-right: 10px;">Lasagne de luxe</h1>
+
+                        <!-- Betygsfunktion -->
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" class="star">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" class="star">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" class="star">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" class="star">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" class="star">&#9733;</label>
+                        </div>
+
+                        <p>Antal ingredienser: <strong>20</strong></p>
+                        <p>Matlagningstid: <strong>45 min</strong></p>
+                        <p>Serverar: <strong>4 hungriga jävlar!</strong></p>
+                        
+                        <!-- Svårighetsgrad på receptet -->
+                        <p>Svårighetsgrad: <span class="badge bg-info">Medel</span></p>
+                        <h2 class="card-title">Ingredienser:</h2>
+                        <ul class="card-text">
+                            <li>10-12 färska lasagneplattor</li>
+                            <li>600 g blandfärs</li>
+                            <li>smör, att steka i</li>
+                            <li>1 gul lök, riven</li>
+                            <li>2 klyftor vitlök, finhackad</li>
+                            <li>400 g krossade tomater (eller passerade tomater)</li>
+                            <li>0,5 dl chilisås</li>
+                            <li>salt</li>
+                            <li>peppar</li>
+                            <li>olivolja, till formen</li>
+                            <li>3 dl mozzarellaost, riven</li>
+                            <li>färsk oregano, att garnera med</li><br>
+    
+                            <p><strong>Béchamelsås</strong></p>
+                            <li>100 g smör</li>
+                            <li>1 dl vetemjöl</li>
+                            <li>4 dl standardmjölk</li>
+                            <li>5 dl vispgrädde</li>
+                            <li>0,25 krm muskot, riven</li>
+                            <li>salt</li>
+                            <li>peppar</li><br>
+                            
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+
+                        <!-- Matlagningsintruktioner -->
+                        <h2 class="card-title">Tillagning:</h2>
+                        <ol class="card-text">
+                            <li>Sätt ugnen på 200 grader. Hetta upp stekpanna med smör och stek färs, lök och vitlök. 
+                            Finfördela färsen och se till att den blir genomstekt</li>
+                            <li>Blanda ner konserverade tomater, chilisås, salt och peppar. Låt alltsammans sjuda, medan du gör béchamelsåsen </li><br>
+                            <li><strong>Béchamelsås:</strong>
+                            Smält smöret i en kastrull. Vispa ner mjölet, och tillsätt mjölk och grädde under
+                            fortsatt vispning så att det inte blir klumpar. Krydda med muskot, salt och peppar. Låt koka upp och sjuda ett par minuter.    
+                            </li><br>
+                            <li><strong>Montering:</strong>
+                            Ringla lite olivolja i en ugnsform. Täck bottnen med béchamelsås och sedan med lasagneplattor.
+                            Varva sedan sås, köttfärsröra, riven ost och lasagneplattor ungefär tre gånger. Avsluta med sås och riven ost på toppen.</li>
+                            <li>Grädda lasagnen i 20 minuter, eller tills osten fått vacker färg</li>
+                            <li>Servera tillsammans med en god och krispig sallad och toppa gärna med lite oregano.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="card-title">Tips från coachen</h2>
+                        <p>
+                            Vem kan tacka nej till en klassisk lasagne? Med smörig béchamelsås, smält ost och sidenmjuka pastaplattor är lasagne mångas favoriträtt.
+                            Visste du att Lasagnens dag alltid firas den 29 juli? I år infaller den, kul nog, på en fredag. Passa därför på att göra en helkväll med lasagne i stora lass och komplettera med en eller flera viner.
+                        </p>
+                        <p><strong>3 viner som gifter sig bra med lasagne:</strong></p>
+                        <ul>
+                            <li>
+                                <i>Valpolicella Ripasso Mezzo Monte (2020)</i><br>
+                                Med sin kryddiga smak passar detta röda vin från Italien utmärkt till lasagne. Dess bouquet består av fat, russin, körsbär, kanel, nötter och vanilj.
+                            </li>
+                            <li>
+                                <i>Selvarossa Salice Salentino (2020)</i><br>
+                                Även detta vin kommer från Italien och har en kryddig karaktär med inslag av fat. Andra nyanser är körsbär, kryddnejlika, vanilj och plommon.<br>
+                            </li>
+                            <li>
+                                <i>Campo Viejo Crianza (2020)</i><br>
+                                Det här vinet kommer från spanska Rioja och har en kryddig smak med karaktär av fat, mörka körsbär, kanel, hallon, örter samt choklad.<br>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Kaloriinformation per portion:</h2>
+                        <ul>
+                            <li>Energi: 1171.75 kcal</li>
+                            <li>Protein: 55 g</li>
+                            <li>Fett: 80 g</li>
+                            <li>Kolhydrater: 250 g</li>
+                            <li>Fibrer: 10 g</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
